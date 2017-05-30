@@ -10,8 +10,8 @@ class Backend {
             mysql_connect('localhost', 'root', 'root') or die("Can't connect to server");
                mysql_select_db('anhkhoi') or die("Can't connect database");
         }else{
-       mysql_connect('localhost', 'thietke7_anhkhoi', 'anhkhoi@123') or die("Can't connect to server");
-            mysql_select_db('thietke7_anhkhoi') or die("Can't connect database");  
+       mysql_connect('localhost', 'anhkhoinetd9e1', '0948857fc5a55e6d') or die("Can't connect to server");
+            mysql_select_db('anhkhoi_net_d9e1') or die("Can't connect database");  
         }
         mysql_query("SET NAMES 'utf8'") or die(mysql_error());
     }
