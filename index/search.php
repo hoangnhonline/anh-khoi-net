@@ -10,7 +10,7 @@ $key = isset($_GET['key']) ? $model->processData($_GET['key']) : "";
 <div class="">
 	<div class="container">
 		<div class="col-md-9">
-			<div class="row">
+			<div class="row" style="margin-right:0px;">
 				<div class="panel panel-default">
 				  <div class="panel-heading">Tìm kiếm</div>
 				  <div class="panel-body" style="text-align:center">

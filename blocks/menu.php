@@ -44,9 +44,9 @@
 		        </ul>
 		      </li>
 		      <li <?php if($mod=='page') echo 'class="active"'; ?>><a href="index.php?mod=page&id=1">Download</a></li>		      
-		      <li <?php if($mod=='contact') echo 'class="active"'; ?>><a href="index.php?mod=contact">Liên hệ</a></li>
-		      <li <?php if($mod=='news' || $mod=="search") echo 'class="active"'; ?>><a href="index.php?mod=search">Tìm kiếm</a></li>
 		      
+		      <li <?php if($mod=='news' || $mod=="search") echo 'class="active"'; ?>><a href="index.php?mod=search">Tìm kiếm</a></li>
+		      <li <?php if($mod=='contact') echo 'class="active"'; ?>><a href="index.php?mod=contact">Liên hệ</a></li>
 		    </ul>	    
 
 		  </div><!--/.nav-collapse -->

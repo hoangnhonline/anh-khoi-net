@@ -38,13 +38,12 @@
 							<p class="product-name">
 								<a href="index.php?mod=detail&id=<?php echo $product['id']; ?>"><?php echo $product['product_name']; ?></a>
 							</p>
-							<p class="product-price"> <?php	if($product['is_cata'] == 1){   echo "Giá Catalogue ";  } ?>
-							<br />
+							<p class="product-price"> <?php	if($product['is_cata'] == 1){   //echo "Giá Catalogue ";  
+							} ?>
+							
 							<?php echo $product['price'] >= 0 ? number_format($product['price']) : $product['price']; ?></p> 
 						</div>
-						<div class="product-detail">
-							<a href="index.php?mod=detail&id=<?php echo $product['id']; ?>" class="btn btn-sm btn-detail"><span class="glyphicon glyphicon-shopping-cart "></span>Chi Tiết</a>
-						</div>
+						
 					</div>
 				</div>	
 				<?php } }else{ ?>				

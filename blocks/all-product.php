@@ -1,26 +1,26 @@
 <div id="all-product">
-	<p class="title-all-product">Tất Cả Sản Phẩm</p>
+	<p class="title-all-product">SẢN PHẨM BÁN CHẠY</p>
 	<div class="row">
 		<div>
 		  <div class="col-md-12">
-		  	<ul class="nav nav-tabs" role="tablist" id="tab-product">
+		  	<!--<ul class="nav nav-tabs" role="tablist" id="tab-product">
 		  		<li role="presentation" class="active"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">Camera VDTECH</a></li>
 			    <li role="presentation"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">Camera Global</a></li>			    
 			    <li role="presentation"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">Camera EYEWIDE</a></li>
 			    <li role="presentation"><a href="#settings" aria-controls="settings" role="tab" data-toggle="tab">Báo cháy</a></li>
 			    <li role="presentation"><a href="#settings2" aria-controls="settings" role="tab" data-toggle="tab">Báo động</a></li>
-			  </ul>
+			  </ul>-->
 		  </div>
 		  <div class="tab-content">
 		    
 		    <div role="tabpanel" class="tab-pane active" id="profile">
 		    	<div class="content-tab">
 			    	<?php 
-			    	$arrGlobal = $model->getListProduct(4, -1, -1, -1, 0, 6);
+			    	$arrGlobal = $model->getListProduct(-1, -1, -1, -1, 0, 36, 1);
 			    	if(!empty($arrGlobal['data'])){
-			    		foreach ($arrGlobal['data'] as $key => $value) {		    			
+			    		foreach ($arrGlobal['data'] as $key => $value) {
 			    	?>
-			    	<div class="col-md-4">
+			    	<div class="col-md-4 col-sm-6 col-xs-6">
 						<div class="item-product">
 							<div class="product-img">
 								<a href="index.php?mod=detail&id=<?php echo $value['id']; ?>">
@@ -33,12 +33,9 @@
 								</p>
 								<p class="product-price"><?php								   
 								   if($value['is_cata'] == 1){
-									   echo "Giá Catalogue ";
-								   } ?><br /><?php echo $value['price'] >= 0 ? number_format($value['price']) : $value['price']; ?></p>
-							</div>
-							<div class="product-detail">
-								<a href="index.php?mod=detail&id=<?php echo $value['id']; ?>" class="btn btn-sm btn-detail"><span class="glyphicon glyphicon-shopping-cart "></span>Chi Tiết</a>
-							</div>
+									   //echo "Giá Catalogue ";
+								   } ?><?php echo $value['price'] >= 0 ? number_format($value['price']) : $value['price']; ?></p>
+							</div>							
 						</div>
 					</div>
 		    		<?php } } ?>	  
