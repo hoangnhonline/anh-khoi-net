@@ -27,7 +27,7 @@
 	<title>Viễn thông Anh Khôi</title>
 	<link rel="icon" type="image/png" href="favicon.ico">	
 	<link href="css/bootstrap.min.css" rel="stylesheet">
-	<link href="css/styles.css?v=1.0" rel="stylesheet">
+	<link href="css/styles.css" rel="stylesheet">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script> 
     <!-- Add mousewheel plugin (this is optional) -->

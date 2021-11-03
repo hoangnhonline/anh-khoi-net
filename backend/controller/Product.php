@@ -27,6 +27,7 @@ $arr['product_alias'] = $product_alias = $model->changeTitle($product_name);
 
 $arr['is_hot'] = $is_hot = (int) $_POST['is_hot'];
 $arr['is_new'] = $is_new = (int) $_POST['is_new'];
+$arr['ban_chay'] = $ban_chay = (int) $_POST['ban_chay'];
 $arr['hidden'] = $hidden = (int) $_POST['hidden'];
 
 $arr['cate_type_id'] = $cate_type_id = (int) $_POST['cate_type_id'];

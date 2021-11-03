@@ -12,7 +12,7 @@
     padding: 10px;
     text-transform: uppercase;
     color: #FFF;
-    font-size: 19px;
+    font-size: 15px;
     margin-top: 30px;
     margin-bottom: 30px;
     font-weight: bold;
@@ -22,7 +22,7 @@
     padding: 10px;
     text-transform: uppercase;
     color: #FFF;
-    font-size: 19px;
+    font-size: 15px;
     margin-top: 60px;
     margin-bottom: 10px;
     font-weight: bold;
@@ -30,8 +30,7 @@
 .item-product{
 	border: 1px solid #ebebeb;
 	padding: 10px;
-	border-radius: 3px;
-	min-height:395px;
+	border-radius: 3px;	
 margin-bottom:5px;
 
 }
@@ -48,11 +47,12 @@ margin-bottom:5px;
 .product-info{
 	text-align: center;
 	font-size: 17px;
-    border-top: 1px solid #ebebeb;
-    border-bottom: 1px solid #ebebeb;
+    border-top: 1px solid #ebebeb;    
 }
 .product-name{
 	margin-top: 10px;
+	height:18px;
+	overflow-y:hidden;
 }
 .product-name a{
 	padding: 10px;
@@ -66,8 +66,7 @@ margin-bottom:5px;
 
 }
 .product-price{
-	    color: #f29f1f;
-	    font-weight: bold;
+	    color: #f29f1f;	    
 }
 .product-detail{
 	text-align: center;
@@ -100,12 +99,10 @@ margin-bottom:5px;
 	color: #FFF;
 }
 #footer{
-	background: #f29f1f;
-	padding: 49px;
-    height: 350px;
-    height: 350px;
+	background: #f29f1f;	        
     color: #FFF;
-    margin-top: 70px
+    margin-top: 70px;
+	padding-left:20px;
 }
 .detail-img{
 	border: 1px solid #ebebeb ;
@@ -204,8 +201,13 @@ margin-bottom:5px;
 .glyphicon-shopping-cart{
 	padding-right: 3px;
 }
-#truc-tuyen{
+#truc-tuyen{	
 	margin: 30px 0 0 0;
+	margin-top:15px;
+	clear:both;
+}
+#truc-tuyen div{
+	text-align:center;
 }
 .truc-tuyen{
 	margin-left: -15px;
@@ -397,15 +399,13 @@ font-size:15px;
 	margin-right: 0px;
 }
 .content-tab .item-product{
-	margin-bottom: 10px;
-	min-height:395px;
+	margin-bottom: 10px;	
 }
 #tab-product > li a:hover{
 	color: #FFF !important;
 
 }
 #tab-product > li.active a:after{
-{
 	display: none;
     content: "";
     width: 0;
@@ -423,4 +423,27 @@ font-size:15px;
 }
 .col-md-6.contact-form{
 	padding: 0px !important;
+}
+.navbar-toggle{
+	float:left !important;
+}
+@media (min-width: 769px) {
+	.item-product{
+		min-height:287px;
+	}
+	.content-tab .item-product{
+		min-height:287px;
+	}
+}
+@media (max-width: 450px) {
+	.product-img{
+		min-height:115px;
+	}
+	.nav>li{
+		text-align:left !important;
+		width:100% !important;
+	}
+}
+#footer h3{
+	font-size:18px !important;
 }

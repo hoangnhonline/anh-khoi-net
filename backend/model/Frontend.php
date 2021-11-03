@@ -81,14 +81,13 @@ function getNameById($table,$column, $id){
         $arrReturn['total'] = mysql_num_rows($rs);    
         return $arrReturn;
     } 
-    function getListProduct($cate_type_id = -1, $cate_id = -1, $is_new = -1, $is_hot = -1, $offset = -1, $limit = -1){
-        $arrReturn = array();
-        
+    function getListProduct($cate_type_id = -1, $cate_id = -1, $is_new = -1, $is_hot = -1, $offset = -1, $limit = -1, $ban_chay = -1){
+        $arrReturn = array();        
         $sql = "SELECT id, image_url, price, cate_type_id, cate_id, product_name, is_cata FROM product WHERE (is_hot = -1 OR $is_hot = -1) ";
         $sql.= " AND (cate_type_id= $cate_type_id OR $cate_type_id = -1) ";
         $sql.= " AND (cate_id= $cate_id OR $cate_id = -1) ";
         $sql.= " AND (is_new = $is_new OR $is_new = -1) ";
-     
+		$sql.= " AND (ban_chay = $ban_chay OR $ban_chay = -1) ";
         $sql.=" ORDER BY created_at DESC ";        
         if ($limit > 0 && $offset >= 0)
             $sql .= " LIMIT $offset,$limit";                

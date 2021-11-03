@@ -108,14 +108,19 @@ if(isset($_GET['id'])){
                             -->
                             <input type="hidden" name="trangthai" value="1">
 
-                            <div class="col-md-6">
+                            <div class="col-md-4">
                                 <div class="form-group">                                
                                     <input type="checkbox" name="is_new" id="is_new" value="1" <?php if(!empty($data['is_new']) && $data['is_new']==1) echo "checked"; ?> />
                                     <label style="color:blue">SP MỚI</label>
                                 </div>
                             </div>  
-                          
-                            <div class="col-md-6">
+							<div class="col-md-4">
+                                <div class="form-group">                                
+                                    <input type="checkbox" name="ban_chay" id="ban_chay" value="1" <?php if(!empty($data['ban_chay']) && $data['ban_chay']==1) echo "checked"; ?> />
+                                    <label style="color:blue">SP bán chạy</label>
+                                </div>
+                            </div> 
+                            <div class="col-md-4">
                                 <div class="form-group">                                
                                     <input type="checkbox" name="is_hot" id="is_hot" value="1" <?php if(!empty($data['is_hot']) && $data['is_hot']==1) echo "checked"; ?> />
                                     <label style="color:blue">HOT (hiện ra trang chủ)</label>
